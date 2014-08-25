@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow">
+
+    <TextView
+        android:id="@+id/find_word_title"
+        android:layout_alignParentTop="true" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6 - What do dogs do? Find the eight words listed below: → ↓" />
+    
+    <GridView android:id="@+id/letter_grid" 
+        android:numColumns="11"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:columnWidth="90dp"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center" 
+	    android:layout_below="@id/find_word_title"/>
+    
+    
+    <TextView
+        android:id="@+id/find_word_words" 
+        android:layout_alignParentBottom="true" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bark drink eat jump lick play run sleep" />
+</RelativeLayout>   
